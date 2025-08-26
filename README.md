@@ -186,4 +186,4 @@ For questions or support, please contact:
 
 ---
 
-**Built with ❤️ for San Juan Social Club**
+**Built with ❤️ for San Juan Social Club by Dunosis LLC**
