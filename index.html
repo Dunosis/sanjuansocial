@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Juan Social Club</title>
+    <meta name="description" content="San Juan Social Club — Events, Workshops, Community.">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><h1>San Juan Social Club</h1></div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#community" class="nav-link">Community</a>
+                <a href="#business" class="nav-link">Business</a>
+                <a href="#learning" class="nav-link">Learning</a>
+                <a href="#rental" class="nav-link">Rental Info</a>
+                <a href="#inquire" class="nav-link">Inquire</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero: full-bleed image with centered overlay text -->
+    <header class="hero-bleed" role="banner">
+        <div class="hero-overlay">
+            <h1 class="hero-brand">San Juan Social Club</h1>
+            <p class="hero-kicker">Events · Workshops · Community</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section: Where Community Gathers -->
+        <section id="community" class="sj-section">
+            <div class="container">
+                <h2 class="sj-heading"><span class="accent-bar" aria-hidden="true"></span>Where Community Gathers</h2>
+                <p class="sj-lede">A place to host gatherings, connect with people, celebrate culture, and strengthen community through meaningful programming.</p>
+                <div class="image-grid">
+                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Where Business Thrives -->
+        <section id="business" class="sj-section">
+            <div class="container">
+                <h2 class="sj-heading"><span class="accent-bar" aria-hidden="true"></span>Where Business Thrives</h2>
+                <p class="sj-lede">An environment designed for entrepreneurs, creators, and organizations to collaborate, network, and accelerate ideas.</p>
+                <div class="image-grid">
+                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Where Learning Begins -->
+        <section id="learning" class="sj-section">
+            <div class="container">
+                <h2 class="sj-heading"><span class="accent-bar" aria-hidden="true"></span>Where Learning Begins</h2>
+                <p class="sj-lede">Workshops, talks, and educational programming that nurture knowledge-sharing and personal development.</p>
+                <div class="image-grid">
+                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rental Info -->
+        <section id="rental" class="sj-section rental">
+            <div class="container rental-grid">
+                <div class="rental-copy">
+                    <h2 class="sj-heading"><span class="accent-bar" aria-hidden="true"></span>Rental Info</h2>
+                    <div class="rental-kv">
+                        <div>
+                            <h3>Square Footage</h3>
+                            <p>2,000 sq ft</p>
+                        </div>
+                    </div>
+                    <h3>Amenities</h3>
+                    <ul class="amenities">
+                        <li>2 bathrooms (ADA compliant)</li>
+                        <li>Common sink</li>
+                        <li>HVAC</li>
+                        <li>Gallery lighting + dimmers</li>
+                        <li>PA system available</li>
+                        <li>Projector + screen optional</li>
+                    </ul>
+                    <h3>Perfect For</h3>
+                    <ul class="amenities">
+                        <li>Private parties</li>
+                        <li>Community gatherings</li>
+                        <li>Workshops + classes</li>
+                        <li>Pop-up events</li>
+                        <li>Photo/film production</li>
+                    </ul>
+                </div>
+                <div class="rental-images">
+                    <div class="rental-img"><div class="img-ph" aria-hidden="true">Image</div></div>
+                    <div class="rental-img"><div class="img-ph" aria-hidden="true">Image</div></div>
+                    <div class="rental-img"><div class="img-ph" aria-hidden="true">Image</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inquire Form -->
+        <section id="inquire" class="sj-section inquire">
+            <div class="container">
+                <h2 class="sj-heading"><span class="accent-bar" aria-hidden="true"></span>Inquire</h2>
+                <form class="inquire-form contact-form">
+                    <div class="form-grid">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="phone" placeholder="Phone">
+                        <input type="text" name="org" placeholder="Organization">
+                        <textarea name="message" rows="4" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer footer--black">
+        <div class="container footer-inner">
+            <div class="footer-brand">San Juan Social Club</div>
+            <div class="footer-meta">
+                <span>PHONE 773-289-8892</span>
+                <span>EMAIL INFO@SANJUANN.COM</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
