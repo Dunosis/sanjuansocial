@@ -268,7 +268,6 @@ p {
   font-family: var(--font-family-exo);
 }
 .sj-lede {
-  max-width: 800px;
   margin: 0 0 var(--spacing-lg) 0;
   color: #4b5563;
   font-family: var(--font-family-kodchasan);
