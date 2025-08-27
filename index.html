@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,16 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Julius+Sans+One&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo"><h1>San Juan Social Club</h1></div>
+            <div class="nav-logo">
+                <h1>San Juan Social Club</h1>
+            </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#community" class="nav-link">Community</a>
                 <a href="#business" class="nav-link">Business</a>
@@ -29,8 +34,13 @@
         </div>
     </nav>
 
-    <!-- Hero: full-bleed image with centered overlay text -->
+    <!-- Hero: full-bleed video background with centered overlay text -->
     <header class="hero-bleed" role="banner">
+        <div class="hero-video-bg">
+            <iframe
+                src="https://www.youtube.com/embed/142ce8CC8f4?autoplay=1&mute=1&controls=0&loop=1&playlist=142ce8CC8f4&modestbranding=1&showinfo=0&rel=0&start=20"
+                frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
         <div class="hero-overlay">
             <h1 class="hero-brand">San Juan Social Club</h1>
             <p class="hero-kicker">Events · Workshops · Community</p>
@@ -42,11 +52,16 @@
         <section id="community" class="sj-section">
             <div class="container">
                 <h2 class="sj-heading"><span class="accent-bar" aria-hidden="true"></span>Where Community Gathers</h2>
-                <p class="sj-lede">A place to host gatherings, connect with people, celebrate culture, and strengthen community through meaningful programming.</p>
-                <div class="image-grid">
-                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
-                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
-                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                <p class="sj-lede">A place to host gatherings, connect with people, celebrate culture, and strengthen
+                    community through meaningful programming.</p>
+                <div class="parent">
+                    <div class="div1"><img class="img-ph" src="img/example.png" alt=""></div>
+                    <div class="div2">
+                        <div class="div3"><img class="img-ph" src="img/example.png" alt=""></div>
+                        <div class="div4"><img class="img-ph" src="img/example.png" alt=""></div>
+                        <div class="div5"><img class="img-ph" src="img/example.png" alt=""></div>
+                        <div class="div6"><img class="img-ph" src="img/example.png" alt=""></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -55,11 +70,16 @@
         <section id="business" class="sj-section">
             <div class="container">
                 <h2 class="sj-heading"><span class="accent-bar" aria-hidden="true"></span>Where Business Thrives</h2>
-                <p class="sj-lede">An environment designed for entrepreneurs, creators, and organizations to collaborate, network, and accelerate ideas.</p>
-                <div class="image-grid">
-                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
-                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
-                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                <p class="sj-lede">An environment designed for entrepreneurs, creators, and organizations to
+                    collaborate, network, and accelerate ideas.</p>
+                <div class="parent">
+                    <div class="div1"><img class="img-ph" src="img/example.png" alt=""></div>
+                    <div class="div2">
+                        <div class="div3"><img class="img-ph" src="img/example.png" alt=""></div>
+                        <div class="div4"><img class="img-ph" src="img/example.png" alt=""></div>
+                        <div class="div5"><img class="img-ph" src="img/example.png" alt=""></div>
+                        <div class="div6"><img class="img-ph" src="img/example.png" alt=""></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -68,11 +88,16 @@
         <section id="learning" class="sj-section">
             <div class="container">
                 <h2 class="sj-heading"><span class="accent-bar" aria-hidden="true"></span>Where Learning Begins</h2>
-                <p class="sj-lede">Workshops, talks, and educational programming that nurture knowledge-sharing and personal development.</p>
-                <div class="image-grid">
-                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
-                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
-                    <div class="image-cell"><div class="img-ph" aria-hidden="true">Image</div></div>
+                <p class="sj-lede">Workshops, talks, and educational programming that nurture knowledge-sharing and
+                    personal development.</p>
+                <div class="parent">
+                    <div class="div1"><img class="img-ph" src="img/example.png" alt=""></div>
+                    <div class="div2">
+                        <div class="div3"><img class="img-ph" src="img/example.png" alt=""></div>
+                        <div class="div4"><img class="img-ph" src="img/example.png" alt=""></div>
+                        <div class="div5"><img class="img-ph" src="img/example.png" alt=""></div>
+                        <div class="div6"><img class="img-ph" src="img/example.png" alt=""></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -106,10 +131,21 @@
                         <li>Photo/film production</li>
                     </ul>
                 </div>
+
                 <div class="rental-images">
-                    <div class="rental-img"><div class="img-ph" aria-hidden="true">Image</div></div>
-                    <div class="rental-img"><div class="img-ph" aria-hidden="true">Image</div></div>
-                    <div class="rental-img"><div class="img-ph" aria-hidden="true">Image</div></div>
+                    <div class="rental-img">
+                        <div class="duo-grid">
+                            <div class="d1"><img class="img-ph" src="img/sj_rentalinfo_01.png" alt=""></div>
+                            <div class="d2"><img class="img-ph" src="img/sj_rentalinfo_02.png" alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="rental-img">
+                        <img class="img-ph" src="img/sj_rentalinfo_03.png" alt="">
+                    </div>
+                    <div class="rental-img">
+                        <img class="img-ph" src="img/sj_rentalinfo_04.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -145,4 +181,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
