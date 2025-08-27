@@ -27,6 +27,9 @@
   --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     sans-serif;
   --font-family-julius: "Julius Sans One", sans-serif;
+  --font-family-exo: "Exo", sans-serif;
+  --font-family-kodchasan: "Kodchasan", sans-serif;
+  --font-family-jomhuria: "Jomhuria", cursive;
   --font-size-base: 16px;
   --font-size-lg: 18px;
   --font-size-xl: 20px;
@@ -35,6 +38,7 @@
   --font-size-4xl: 36px;
   --font-size-5xl: 48px;
   --font-size-6xl: 56px;
+  --font-size-9xl: 96px;
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -135,10 +139,10 @@ p {
 .hero-bleed {
   position: relative;
   margin-top: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
+  min-height: auto;
+  max-height: auto;
   background: #222;
   overflow: hidden;
   display: flex;
@@ -151,15 +155,15 @@ p {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 0;
   pointer-events: none;
 }
 .hero-video-bg iframe {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -172,7 +176,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   text-align: center;
   padding: 0 var(--spacing-sm);
   color: #fff;
@@ -189,18 +193,52 @@ p {
   font-size: var(--font-size-6xl);
   letter-spacing: 0.5px;
   margin-bottom: var(--spacing-xs);
+  font-family: var(--font-family-jomhuria);
+  font-weight: 400;
 }
+
 .hero-kicker {
   color: #e5e7eb;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  font-family: var(--font-family-julius);
+  font-size: 10px;
+  margin-bottom: var(--spacing-md);
 }
-
+@media (max-width: 768px) {
+  .hero-bleed {
+    height: 80vh;
+    min-height: auto;
+    max-height: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-overlay {
+    justify-content: center;
+  }
+  .hero-brand {
+    font-size: var(--font-size-9xl);
+  }
+  .hero-kicker {
+    font-size: var(--font-size-2xl);
+  }
+}
 /* Sections */
 .sj-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: var(--spacing-3xl) 0;
   background: #fff;
+}
+@media (min-width: 768px) {
+  .sj-section {
+    height: 100vh;
+  }
+  .sj-section .container {
+    justify-content: center;
+  }
 }
 .sj-heading {
   display: flex;
@@ -208,18 +246,48 @@ p {
   gap: var(--spacing-sm);
   font-size: var(--font-size-3xl);
   margin-bottom: var(--spacing-sm);
+  font-family: var(--font-family-exo);
 }
+.sj-subheading {
+  font-family: var(--font-family-exo);
+}
+.sj-subheading h1,
+h2,
+h3,
+p {
+  font-size: var(--font-size-2xl);
+  font-family: var(--font-family-exo);
+}
+
 .accent-bar {
   display: inline-block;
   width: 6px;
   height: 28px;
   background: var(--brand-green);
   border-radius: 3px;
+  font-family: var(--font-family-exo);
 }
 .sj-lede {
   max-width: 800px;
   margin: 0 0 var(--spacing-lg) 0;
   color: #4b5563;
+  font-family: var(--font-family-kodchasan);
+  font-size: var(--font-size-xl);
+}
+
+@media (min-width: 768px) {
+  .sj-heading {
+    font-size: var(--font-size-4xl);
+  }
+  .sj-subheading h1,
+  h2,
+  h3,
+  p {
+    font-size: var(--font-size-3xl);
+  }
+  .sj-lede {
+    font-size: var(--font-size-2xl);
+  }
 }
 
 /* 3-up image grid per section */
@@ -268,6 +336,7 @@ p {
   padding-left: 1.25rem;
   margin: 0.4rem 0;
   color: #374151;
+  font-family: var(--font-family-kodchasan);
 }
 .amenities li::before {
   content: "•";
@@ -275,6 +344,12 @@ p {
   left: 0;
   color: var(--brand-green);
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .amenities {
+    font-size: var(--font-size-xl);
+  }
 }
 .rental-images {
   display: grid;
@@ -327,7 +402,10 @@ textarea:focus {
 
 /* Buttons */
 .btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   padding: 0.7rem 1.25rem;
   border-radius: var(--radius-sm);
   text-decoration: none;
@@ -347,7 +425,7 @@ textarea:focus {
 
 /* Footer */
 .footer {
-  padding: var(--spacing-2xl) 0 var(--spacing-lg);
+  padding: var(--spacing-lg) 0 var(--spacing-lg);
   background: var(--text-primary);
   color: #fff;
 }
@@ -365,13 +443,27 @@ textarea:focus {
 .footer-brand {
   font-weight: 700;
   letter-spacing: 0.4px;
+  font-family: var(--font-family-jomhuria);
+  font-weight: 400;
+  font-size: var(--font-size-6xl);
 }
 .footer-meta {
   display: flex;
-  gap: var(--spacing-lg);
+  flex-direction: column;
+  gap: 8px;
   color: #e5e7eb;
   font-weight: 600;
   letter-spacing: 0.02em;
+  font-family: var(--font-family-julius);
+}
+
+@media (min-width: 768px) {
+  .footer-brand {
+    font-size: var(--font-size-9xl);
+  }
+  .footer-meta {
+    font-size: var(--font-size-2xl);
+  }
 }
 
 /* Responsive */
@@ -430,7 +522,7 @@ textarea:focus {
     padding: 0 var(--spacing-sm);
   }
   .hero-bleed {
-    min-height: 320px;
+    height: 320px;
   }
 }
 
