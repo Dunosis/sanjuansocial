@@ -7,7 +7,7 @@
 
 :root {
   /* Brand Colors (approx from Figma) */
-  --brand-green: #6ef7a3;
+  --brand-green: #45f4bc;
   --brand-black: #0f0f10;
 
   /* Existing palette */
@@ -269,6 +269,7 @@ p {
   color: #4b5563;
   font-family: var(--font-family-kodchasan);
   font-size: var(--font-size-xl);
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
