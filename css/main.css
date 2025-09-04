@@ -268,11 +268,12 @@ p {
   font-family: var(--font-family-exo);
 }
 .sj-lede {
-  max-width: 800px;
+  width: 100%;
   margin: 0 0 var(--spacing-lg) 0;
   color: #4b5563;
   font-family: var(--font-family-kodchasan);
   font-size: var(--font-size-xl);
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
